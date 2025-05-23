@@ -39,10 +39,4 @@
         });
 
         // Contact form fake submit
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            const msg = document.getElementById('formMessage');
-            msg.textContent = "Thank you for reaching out! I'll get back to you soon.";
-            msg.style.display = 'block';
-            this.reset();
-            setTimeout(() => { msg.style.display = 'none'; }, 4000);
-        });
+        
