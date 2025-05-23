@@ -40,7 +40,6 @@
 
         // Contact form fake submit
         document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
             const msg = document.getElementById('formMessage');
             msg.textContent = "Thank you for reaching out! I'll get back to you soon.";
             msg.style.display = 'block';
