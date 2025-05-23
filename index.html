@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Developer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">AKACHUKWU</div>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="navbar">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Hi, I'm Akachukwu<br><span style="font-size:1.5rem; color:#fff;">Web Developer</span></h1>
+        <p>
+            I craft beautiful, fast, and modern web experiences.<br>
+            Passionate about building interactive, accessible, and scalable web applications.
+        </p>
+        <button class="cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+            Contact Me
+        </button>
+    </section>
+
+    <section id="about">
+        <div class="section-title">About Me</div>
+        <div class="about animate">
+            <div class="about-img">
+                <img src="media/LXGWyuee_400x400.jpg" alt="Profile Photo">
+            </div>
+            <div class="about-text">
+                <p>
+                    Hello! I'm Akachuwku, a passionate web/mobile app developer with a love for clean code and creative design. I specialize in building responsive, high-performance websites and web apps using the latest technologies. My mission is to turn ideas into delightful digital products that make a difference.
+                </p>
+                <p>
+                    When I'm not coding, you'll find me exploring new tech trends, contributing to open source, or playing the piano😁.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-title">Skills</div>
+        <div class="skills animate">
+            <div class="skill">HTML5</div>
+            <div class="skill">CSS3 / SASS</div>
+            <div class="skill">JavaScript (ES6+)</div>
+            <div class="skill">DJANGO</div>
+            <div class="skill">Git & GitHub</div>
+            <div class="skill">REST APIs</div>
+            <div class="skill">MongoDB</div>
+            <div class="skill">DJANGO RF</div>
+            <div class="skill">Figma</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-title">Projects</div>
+        <div class="projects animate"></div>
+            <div class="project-card">
+                <img class="project-img" src="media/portfolio ss.PNG" alt="Project 1">
+                <div class="project-content">
+                    <div>
+                        <div class="project-title">Portfolio Website</div>
+                        <div class="project-desc">A personal portfolio website to showcase my work, skills, and contact information. Built with React and styled-components.</div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img class="project-img" src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Project 2">
+                <div class="project-content">
+                    <div>
+                        <div class="project-title">E-commerce App</div>
+                        <div class="project-desc">A full-featured e-commerce web app with shopping cart, authentication, and payment integration. Built with Next.js and MongoDB.</div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank">Live Demo</a>
+                        <a href="#" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img class="project-img" src="media/spooky ss.PNG" alt="Project 3">
+                <div class="project-content">
+                    <div>
+                        <div class="project-title">Spookyblog</div>
+                        <div class="project-desc">A modern blog platform with markdown support, user authentication, and responsive design. Built with Node.js and Express.</div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" target="_blank">Live Demo</a>
+                        <a href="#" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-title">Contact</div>
+        <form class="contact-form animate" id="contactForm">
+            <input type="text" name="username" placeholder="Your Name" required autocomplete="off">
+            <input type="email" name="email" placeholder="Your Email" required autocomplete="off">
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+            <div id="formMessage" style="text-align:center; color:var(--accent); margin-top:0.5rem; display:none;"></div>
+        </form>
+    </section>
+
+    <div class="footer">
+        &copy; 2024 George | Web Developer Portfolio
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
